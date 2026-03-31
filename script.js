@@ -5,9 +5,10 @@ const audio = document.getElementById('podcast-audio');
 const transcript = document.getElementById('podcast-transcript');
 
 audio.textTracks[0].mode='showing';
+transcript.style.display='block';
 
 audio.addEventListener('play', () => {
-    transcript.style.display='block';
+
 
     audio.textTracks[0].addEventListener('cuechange', function () {
         transcript.innerText = this.activeCues[0].text;

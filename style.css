@@ -9,10 +9,29 @@
 
 body {
     margin: 2rem;
+    overflow: clip;
+}
+
+main {
+    display: flex;
+
+}
+
+h1, h2, p {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 1.5em
+}
+
+.cover {
+    width: 15rem;
+    max-width: 100%;
 }
 
 .podcast {
-    width: clamp(50vw, 75vw, 90vw);
+    width: clamp(50vw, 75vw, 75vw);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -47,4 +66,32 @@ body {
     justify-self: center;
     max-width: 600px;
     font-size: 2em;
+    font-family: sans-serif
+}
+
+
+
+ul {
+    display: flex;
+    width: 90%;
+    height: fit-content;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+}
+
+li {
+    background-color: var(--dark);
+    color: var(--light);
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    background-color: var(--dark);
+    border:solid 5px var(--highlight-3)
 }
