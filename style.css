@@ -7,14 +7,13 @@
     --highlight-4: #FDC513;
 }
 
+
 body {
-    margin: 2rem;
     overflow: clip;
 }
 
 main {
     display: flex;
-
 }
 
 h1, h2, p {
@@ -25,34 +24,56 @@ h1 {
     font-size: 1.5em
 }
 
+section {
+    height: 100vh;
+}
+
+/* about the podcast section */
+.now-playing-container {
+    width: 90%;
+    display: flex;
+
+
+
+
+    div {
+        margin-right: 2rem;
+    }
+}
+
+.about-podcast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
 .cover {
     width: 15rem;
     max-width: 100%;
+    grid-row: 2 / 3
 }
 
 .podcast {
     width: clamp(50vw, 75vw, 75vw);
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-self: center;
-    align-items: start;
 }
 
 #podcast-audio {
     display: block;
     appearance: none;
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     justify-self: center;
-    margin-bottom: 4rem;
     background: transparent;
 }
 
 .transcript-container {
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     justify-self: center ;
     display: flex;
     justify-content: center;
@@ -68,8 +89,6 @@ h1 {
     font-size: 2em;
     font-family: sans-serif
 }
-
-
 
 ul {
     display: flex;
@@ -89,9 +108,10 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: solid 5px transparent;
 }
 
 .active {
-    background-color: var(--dark);
-    border:solid 5px var(--highlight-3)
+    background-color: var(--light);
+    border: solid 5px var(--highlight-3)
 }
