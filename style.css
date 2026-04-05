@@ -7,7 +7,6 @@
     --highlight-4: #FDC513;
 }
 
-
 body {
     overflow: clip;
 }
@@ -115,3 +114,4 @@ li {
     background-color: var(--light);
     border: solid 5px var(--highlight-3)
 }
+
