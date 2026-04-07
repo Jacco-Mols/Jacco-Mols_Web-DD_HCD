@@ -22,5 +22,11 @@ Ik denk dat ik in de eerste hele goede stappen heb kunnen maken naar een goed pr
 
 Ik hoop volgende week nog wel grote stappen te kunnen maken in het ontwerp van de teksten en meer functies te kunnen toevoegen dat voor een fijnere gebruikers ervaring zorgt. Ik heb op dit moment ook het eerse idee om te laten zien welk persoon aan het praten is door hun foto te highlighten. Dit lijkt mij een goede toevoeging, maar hier wil ik nog wel veranderingen aan brengen. 
 
+## Week 2
+
+### Dinsdag 7 April
+Geteste versie:
+<img width="1506" height="770" alt="Screenshot 2026-04-07 at 12 25 04" src="https://github.com/user-attachments/assets/404c30bd-59df-4e04-836b-fbc2010d2689" />
+
 
 
