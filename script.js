@@ -4,6 +4,9 @@
 const audio = document.getElementById('podcast-audio');
 const transcript = document.getElementById('podcast-transcript');
 
+
+const vynilPng = document.querySelector('.vynil-png')
+
 audio.addEventListener('loadedmetadata', () => {
     const track = audio.textTracks[0];
     
@@ -23,6 +26,10 @@ audio.addEventListener('loadedmetadata', () => {
             .replace (
                 /\bbest\b/i,
                 `<span class="best">best</span>`
+            )
+            .replace (
+                /\bflexible\b/i,
+                `<span class="flexible">flexible<span>`
             )
             .replace (
                 /\bgiggle\b/i,
@@ -78,3 +85,15 @@ function switchSpeaker(text) {
        person3.classList.add('active')
     }
 }
+
+
+
+audio.addEventListener('play', () => {
+    vynilPng.classList.add('rotate')
+    console.log('powfh')
+})
+
+audio.addEventListener('pause', () => {
+    vynilPng.classList.remove('rotate')
+    console.log('powfh')
+})

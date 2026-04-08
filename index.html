@@ -12,12 +12,28 @@
     <main>
         <section class="about-podcast">
 
+            <div>
                 <h1>Now playing</h1>
-
+                <img class="vynil-png" src="./assets/img/vinyl.png" alt="png-of-vynil">
+            </div>
             <img class="cover" src="./assets/img/Smartless-cover.jpg" alt="Cover of podcast Smartless">
- 
-            <h2>Smartless - "RE-RELEASE: Emma Stone"</h2>
+            <div class="podcast-title-container">
+                <h2>Smartless</h2>
+                <h2>RE-RELEASE: Emma Stone</h2>
+            </div>
+        </section>
+        <section class="podcast">
+            <div class="transcript-container">
+                <div id="podcast-transcript"></div>
+            </div>
+            <audio src="./assets/audio/resolve.mp3" id="podcast-audio" controls>
+                <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/track -->
+                <track default kind="captions" label="captions" srclang="en" src="./assets/transcripts/transcript.vtt">
+            </audio>
 
+        </section>
+
+        <section class="speaker-section">
             <ul id="speaker">
                 <li id="speaker-1" class="speaker"><img src="./assets/img/jason.webp" alt="profile-picture-Jason"></li>
                 <li><p>Jason</p></li>
@@ -26,16 +42,6 @@
                 <li id="speaker-3" class="speaker"><img src="./assets/img/will.jpg" alt="profile-picture-Will"></li>
                 <li><p>Will</p></li>
             </ul>
-        </section>
-        <section class="podcast">
-            <div class="transcript-container">
-                <div id="podcast-transcript"></div>
-            </div>
-            <audio src="./assets/audio/resolve.mp3" id="podcast-audio" controls>
-                <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/track -->
-                <track default kind="captions" label="captions" srclang="en" src="./assets/transcripts/transcript.vtt" >
-            </audio>
-
         </section>
     </main>
 
