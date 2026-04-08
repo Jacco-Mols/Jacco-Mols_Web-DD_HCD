@@ -25,8 +25,22 @@ Ik hoop volgende week nog wel grote stappen te kunnen maken in het ontwerp van d
 ## Week 2
 
 ### Dinsdag 7 April
-Geteste versie:
+Ik heb vandaag de tweede test gehad met Darice. Ik vond dat de test wel goed ging, maar ik had graag meer dingen willen toevoegen aan mijn site zodat ik nog meer achter de wensen van Darice kon komen. Hieronder mijn geteste versie:
 <img width="1506" height="770" alt="Screenshot 2026-04-07 at 12 25 04" src="https://github.com/user-attachments/assets/404c30bd-59df-4e04-836b-fbc2010d2689" />
 
+Ik heb deskondanks wel goed kunnen achterhalen of ik de goeie kant op gaat. Ik heb namelijk deze vragen kunnen stellen aan Darice:
+
+- Zou je het fijn vinden om woorden zoals “uuhh” of “uhmm” in de tekst terug te lezen?
+    - Het is op een manier wel menselijker, maar als je het voornamelijk zo word gesproken zou ik het er niet bij zetten. Maar even tussendoor zou wel       fijn zijn
+- Vind je de plaatjes afleidend van de tekst? Zo ja, zou je dit graag erin willen houden maar dan op een anderen manier?
+    - Het is heel fijn dat ze kan zien wie kan spreken, maakt het een stuk menselijker en leuker om te lezen. Als er veel tekst bij is kan het wel
+      lastig zijn om terug te kijken naar de plaatjes.
+- Vind je het fijn om alvast de tekst te lezen die gaat volgen?
+    - Ja dat zou wel kunnen (misschien niet heel veel toevoegen, maar als het bijvoorbeeld een veel lichtere kleur is kan dat wel
+- Welke onderdelen van de website voelen nog misschien onduidelijk?
+    - Nog nieuwsgierig hoe de website eruit ziet op mobiel. Maar website die super veel detail heeft vind ze een keer wel leuk, maar word vervolgens
+      wel afleiden, hou het simpel.
+- Is de styling van verschillende woorden duidelijk? Laat het goed voor jou zien hoe iemand iets zegt?
+    - Bij het woordje best: als de zin monotoon word uitgesproken en het woordje “best” wat duidelijker word gezegd is het wel duidelijk.
 
 
