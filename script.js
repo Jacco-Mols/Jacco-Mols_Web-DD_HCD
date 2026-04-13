@@ -3,46 +3,46 @@
 
 const audio = document.getElementById('podcast-audio');
 const transcript = document.getElementById('podcast-transcript');
+const nextTranscript = document.getElementById('next-transcript')
 
-
-const vynilPng = document.querySelector('.vynil-png')
+const vynilPng = document.querySelector('.vynil-png');
 
 audio.addEventListener('loadedmetadata', () => {
     const track = audio.textTracks[0];
     
+    // verstopt ingebouden captions
     track.mode = 'hidden';
 
     track.addEventListener('cuechange', () => {
+        
+        const allCues = track.cues;
 
         if (track.activeCues.length > 0) {
-            const cue = track.activeCues[0];
-            const text = cue.text;
+            const currentCue = track.activeCues[0];
+            const currentIndex = Array.from(allCues).indexOf(currentCue);
+
+            let text = currentCue.text;
 
             // Bron (AI), prompt: "is it possible to edit one specific word of a que in the vtt document? So I want to adit the word giggle in the vtt, how do I edit the with either js or css"
             // hieronder het antwoord van AI, verplaatst een woord van vtt met hetzelfde maar dan een class, waardoor ik het kan stylen
             let formattedText = text;
 
             formattedText = formattedText
-            .replace (
-                /\bbest\b/i,
-                `<span class="best">best</span>`
-            )
-            .replace (
-                /\bflexible\b/i,
-                `<span class="flexible">flexible<span>`
-            )
-            .replace (
-                /\bgiggle\b/i,
-                `<span class="giggle">giggle</span>`,
-            )
-            .replace (
-                /\bShut up\b/i,
-                `<span class="shut-up">Shut up</span>`
-            )
+            .replace (/\bbest\b/i, `<span class="best">best</span>`)
+            .replace (/\bflexible\b/i, `<span class="flexible">flexible</span>`)
+            .replace (/\bgiggle\b/i, `<span class="giggle">giggle</span>`)
+            .replace (/\bShut up\b/i, `<span class="shut-up">Shut up</span>`)
 
             transcript.innerHTML = formattedText;
 
-            // Met behulp van Diego bedacht en geschreven, hiermee stijl ik de transcriptie op het moment dat de aangegeven class in het vtt bestand zit.  
+            if (currentIndex < allCues.length - 1 ) {
+                nextTranscript.innerHTML = allCues[currentIndex + 1].text;
+            } else {
+                nextTranscript.innerHTML = "";
+            }
+
+            // Met behulp van Diego bedacht en geschreven, hiermee stijl ik de transcriptie op het moment dat de aangegeven class in het vtt bestand zit.
+            // Nadeel hiervan kan geen losse woorden stylen 
             if(text.includes('.music-playing')){
                 transcript.classList.add('intro-animation');
             }
@@ -58,42 +58,39 @@ audio.addEventListener('loadedmetadata', () => {
 
             switchSpeaker(text);
         }
-    })
-})
+    });
+});
 
 // Style profiles based on who is talking
 function switchSpeaker(text) {
 
-    const people = document.querySelectorAll('.speaker')
-    const person1 = document.getElementById('speaker-1')
-    const person2 = document.getElementById('speaker-2')
-    const person3 = document.getElementById('speaker-3')
+    const people = document.querySelectorAll('.speaker');
+    const person1 = document.getElementById('speaker-1');
+    const person2 = document.getElementById('speaker-2');
+    const person3 = document.getElementById('speaker-3');
 
-    people.forEach(p => 
+    people.forEach( p => 
         p.classList.remove('active')
-    )
+    );
 
     if (text.includes('Jason:')) {
-        person1.classList.add('active')
+        person1.classList.add('active');
     }
 
     if (text.includes('Sean:')) {
-       person2.classList.add('active')
+       person2.classList.add('active');
     }
 
     if (text.includes('Will:')) {
-       person3.classList.add('active')
+       person3.classList.add('active');
     }
 }
 
-
-
+// rotate vyil img when playing
 audio.addEventListener('play', () => {
-    vynilPng.classList.add('rotate')
-    console.log('powfh')
+    vynilPng.classList.add('rotate');
 })
 
 audio.addEventListener('pause', () => {
-    vynilPng.classList.remove('rotate')
-    console.log('powfh')
+    vynilPng.classList.remove('rotate');
 })

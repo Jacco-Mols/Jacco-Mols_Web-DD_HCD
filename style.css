@@ -1,12 +1,31 @@
 :root {
     --dark: #1A1613;
     --light: #F9E7D9;
+    --extra-light: #fff8f3;
     --highlight-1: #2F6D83;
     --highlight-2: #F61833;
     --highlight-3: #F67A2C;
     --highlight-4: #FDC513;
 }
+@font-face {
+    font-family: 'bold';
+    src: url(./assets/fonts/OpenSans-Bold.ttf);
+}
 
+@font-face {
+    font-family: 'medium';
+    src: url(./assets/fonts/OpenSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(./assets/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'light';
+    src: url(./assets/fonts/OpenSans-Light.ttf);
+}
 body {
     overflow: clip;
 }
@@ -23,12 +42,14 @@ header {
 }
 
 h1, h2, p {
-    font-family: sans-serif;
+    font-family: 'medium'
 }
 
 h1 {
+    font-family: 'bold';
     font-size: 2.5em;
     margin: 0;
+    text-transform: uppercase;
 }
 
 section {
@@ -54,16 +75,15 @@ img {
 
         img {
             max-width: 100%;
-            width: 2rem;
-            /* align-self: start; */
+            width: 3rem;
         }
     }
-
 }
 
 .cover {
     width: 100%;
     max-width: 100%;
+    margin-bottom: 1rem;
 }
 
 .podcast-title-container {
@@ -71,12 +91,14 @@ img {
     flex-direction: column;
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.5em;
         margin: 0;
+        font-family: 'bold';
     }
 
     h2:first-of-type {
-        font-size: .9em;
+        font-size: 1em;
+        margin-bottom: .5rem;
     }
 }
 
@@ -100,20 +122,31 @@ img {
 .transcript-container {
     width: 100%;
     height: 75vh;
-    justify-self: center ;
-    display: flex;
+    display: grid;
+    grid-template-rows: 65% 35%;
     justify-content: center;
     align-items: center;
     background-color: var(--light);
     border-radius: 1rem;
+
+    div {
+        text-align: center;
+        max-width: 600px;
+        font-size: 2em;
+        font-family: 'medium';
+        color: var(--dark);
+    }
 }
 
 #podcast-transcript {
-    text-align: center;
-    justify-self: center;
-    max-width: 600px;
-    font-size: 2em;
-    font-family: sans-serif
+    margin-bottom: 1rem;
+    align-self: end;
+    translate: 0rem -4rem;
+}
+
+#next-transcript {
+    font-size: 1.5em;
+    opacity: .4
 }
 
 /* Speakers */
@@ -207,6 +240,6 @@ li.active:not(li:nth-of-type(2n)) {
 
 @keyframes rotate {
     to {
-        transform: rotate(360deg)
+        transform: rotate(360deg);
     }
 }
