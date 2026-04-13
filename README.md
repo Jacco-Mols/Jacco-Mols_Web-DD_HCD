@@ -43,4 +43,11 @@ Ik heb deskondanks wel goed kunnen achterhalen of ik de goeie kant op gaat. Ik h
 - Is de styling van verschillende woorden duidelijk? Laat het goed voor jou zien hoe iemand iets zegt?
     - Bij het woordje best: als de zin monotoon word uitgesproken en het woordje “best” wat duidelijker word gezegd is het wel duidelijk.
 
+### Afronding week 2
+Vanwege een belangrijke persoonlijke afspraak heb ik niet de mogelijkheid gekregen om vrijdag op school te zijn en zal ik daarom mijn gesprek een ander mooment inhalen. 
 
+We hadden ook deze week minder tijd om te werken aan dit vak vanwege tweede paasdag, waardoor ik niet zo ver ben gekomen als ik had gehoopt. Toch vond ik wel dat ik een mooie tweede versie had gemaakt en getest bij Darice, ik had daarnaast ook goede vragen gesteld die mij volgende week weer verder op weg helpen. volgenden week hoop veel van deze punten in mijn website te hebben om meer te kunnen testen volgende dinsdag. Ik hoop de transcriptie nog wat leuker en uitgebreider te kunnen stylen dan ik dat nu heb staan, nu is het namelijk erg minimaal. 
+
+#### Gesprek van 10 April ingehaald op .....
+
+## Week 3
