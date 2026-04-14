@@ -59,9 +59,19 @@ Verder heb ik een klein detail toegevoegd, ik heb namelijk een vynil toegevoegd 
 
 
 ### Dinsdag 14 April
+Deze week hebben de derde test gehad met Darice. Deze test ging wel goed, ik een redelijke versie die ik kon testen en ook nuttige vragen die ik wilde stellen om beter te weten welke functies een hoge prioriteit hebben. Zo heb ik dit allemaal kunnen vragen aan Darice:
 
-
+- Is de context duidelijk van de podcast, snap waar het over gaat?
+    - Zou je het fijn vinden om hier een stukje voor te krijgen
+        - Nee herkend de actuers wel, het is fijn als een stukje intro onder de titel staat.
+- Is het ontwerp op dit moment te naar wens? wilt simpel maar is dit te simpel?
+    - Het is best wel simpel dus probeer nieuwe dingen uit.
+- Vind je het transcript goed leesbaar op deze manier?
+    - Moeten teksten niet in kortere zinnen?
+        - Ja soms zijn teksten wel in te korte zinnen
+        - Het is handig als je de keuze of vrijheid hebt om door de transcriptie heen te scrollen zodat terug kan lezen of juist alvast verder.
 
 Geteste versie:
 <img width="1509" height="773" alt="Third version" src="https://github.com/user-attachments/assets/2d22abca-8a2b-4300-8c5a-54048112b1ba" />
 
+Waar ik dus aan heb gewerkt is een soort progress bar waardoor je kan zien hoe lang je hebt voordat het verder gaat. Dit was technisch wel lastig, maar ik ben er wel uitgekomen waar ik heel blij mee ben. Ik hoop nog ervoor te kunnen zorgen dat je het kan pauzeren wanneer je de audio stopt. Verder wil nog ervoor zorgen dat de transcriptie zelf beter leesbaar is door bijvoorbeeld de mogelijkheid te bieden om door de teksten heen te scrollen.
