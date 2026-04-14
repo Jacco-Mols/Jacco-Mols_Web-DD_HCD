@@ -58,5 +58,10 @@ Ik heb vandaag verder gewerkt vanuit de feedback van vorige week. Ik was voornam
 Verder heb ik een klein detail toegevoegd, ik heb namelijk een vynil toegevoegd die ronddraait op het moment dat je op play klikt. Hij is niet al te groot want ik wil het niet te afleidend maken, maar verder denk ik dat het een goede toevoeging zal zijn. 
 
 
+### Dinsdag 14 April
 
+
+
+Geteste versie:
+<img width="1509" height="773" alt="Third version" src="https://github.com/user-attachments/assets/2d22abca-8a2b-4300-8c5a-54048112b1ba" />
 
