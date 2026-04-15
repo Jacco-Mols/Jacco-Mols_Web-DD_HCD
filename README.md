@@ -46,8 +46,32 @@ Ik heb deskondanks wel goed kunnen achterhalen of ik de goeie kant op gaat. Ik h
 ### Afronding week 2
 Vanwege een belangrijke persoonlijke afspraak heb ik niet de mogelijkheid gekregen om vrijdag op school te zijn en zal ik daarom mijn gesprek een ander mooment inhalen. 
 
-We hadden ook deze week minder tijd om te werken aan dit vak vanwege tweede paasdag, waardoor ik niet zo ver ben gekomen als ik had gehoopt. Toch vond ik wel dat ik een mooie tweede versie had gemaakt en getest bij Darice, ik had daarnaast ook goede vragen gesteld die mij volgende week weer verder op weg helpen. volgenden week hoop veel van deze punten in mijn website te hebben om meer te kunnen testen volgende dinsdag. Ik hoop de transcriptie nog wat leuker en uitgebreider te kunnen stylen dan ik dat nu heb staan, nu is het namelijk erg minimaal. 
+We hadden ook deze week minder tijd gehad om te werken aan dit vak vanwege tweede paasdag, waardoor ik niet zo ver ben gekomen als ik had gehoopt. Toch vond ik wel dat ik een mooie tweede versie had gemaakt en getest bij Darice, ik had daarnaast ook goede vragen gesteld die mij volgende week weer verder op weg helpen. volgenden week hoop veel van deze punten in mijn website te hebben om meer te kunnen testen volgende dinsdag. Ik hoop de transcriptie nog wat leuker en uitgebreider te kunnen stylen dan ik dat nu heb staan, nu is het namelijk erg minimaal. 
 
 #### Gesprek van 10 April ingehaald op .....
 
 ## Week 3
+
+### Maandag 13 April
+Ik heb vandaag verder gewerkt vanuit de feedback van vorige week. Ik was voornamelijk bezig om het mogelijk te maken dat je de volgende captions kan zien. Dit leek me wel een fijne toevoeging vooral op momenten dat er veel word gezegd. Aan de technische kant was dit wel veel lastiger dan ik dacht, ik moest veel nieuwe code gebruiken zoals Array.from() of IndexOf() wat wel lang duurde om te begrijpen. Na veel vragen aan klasgenoten, AI en opzoeken heb een goed idee gekregen over hoe het werkt en is het gelukt om een functie te schrijven met behulp van AI. 
+
+Verder heb ik een klein detail toegevoegd, ik heb namelijk een vynil toegevoegd die ronddraait op het moment dat je op play klikt. Hij is niet al te groot want ik wil het niet te afleidend maken, maar verder denk ik dat het een goede toevoeging zal zijn. 
+
+
+### Dinsdag 14 April
+Deze week hebben de derde test gehad met Darice. Deze test ging wel goed, ik een redelijke versie die ik kon testen en ook nuttige vragen die ik wilde stellen om beter te weten welke functies een hoge prioriteit hebben. Zo heb ik dit allemaal kunnen vragen aan Darice:
+
+- Is de context duidelijk van de podcast, snap waar het over gaat?
+    - Zou je het fijn vinden om hier een stukje voor te krijgen
+        - Nee herkend de actuers wel, het is fijn als een stukje intro onder de titel staat.
+- Is het ontwerp op dit moment te naar wens? wilt simpel maar is dit te simpel?
+    - Het is best wel simpel dus probeer nieuwe dingen uit.
+- Vind je het transcript goed leesbaar op deze manier?
+    - Moeten teksten niet in kortere zinnen?
+        - Ja soms zijn teksten wel in te korte zinnen
+        - Het is handig als je de keuze of vrijheid hebt om door de transcriptie heen te scrollen zodat terug kan lezen of juist alvast verder.
+
+Geteste versie:
+<img width="1509" height="773" alt="Third version" src="https://github.com/user-attachments/assets/2d22abca-8a2b-4300-8c5a-54048112b1ba" />
+
+Waar ik dus aan heb gewerkt is een soort progress bar waardoor je kan zien hoe lang je hebt voordat het verder gaat. Dit was technisch wel lastig, maar ik ben er wel uitgekomen waar ik heel blij mee ben. Ik hoop nog ervoor te kunnen zorgen dat je het kan pauzeren wanneer je de audio stopt. Verder wil nog ervoor zorgen dat de transcriptie zelf beter leesbaar is door bijvoorbeeld de mogelijkheid te bieden om door de teksten heen te scrollen.
