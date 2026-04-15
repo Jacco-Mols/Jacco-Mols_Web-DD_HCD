@@ -6,7 +6,9 @@
     --highlight-2: #F61833;
     --highlight-3: #F67A2C;
     --highlight-4: #FDC513;
+
 }
+
 @font-face {
     font-family: 'bold';
     src: url(./assets/fonts/OpenSans-Bold.ttf);
@@ -49,7 +51,6 @@ h1 {
     font-family: 'bold';
     font-size: 2.5em;
     margin: 0;
-    text-transform: uppercase;
 }
 
 section {
@@ -63,13 +64,16 @@ img {
 
 /* about the podcast section */
 .about-podcast {
+    padding: 1rem;
     width: 40%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: start;
 
     div:first-of-type {
         display: flex;
+        justify-content: space-between;
         gap: .5rem;
         margin-bottom: 3rem;
 
@@ -81,7 +85,7 @@ img {
 }
 
 .cover {
-    width: 100%;
+    width: 90%;
     max-width: 100%;
     margin-bottom: 1rem;
 }
@@ -123,11 +127,13 @@ img {
     width: 100%;
     height: 75vh;
     display: grid;
-    grid-template-rows: 65% 35%;
+    grid-template-rows: 17,5% 65% 17,5%;
     justify-content: center;
     align-items: center;
     background-color: var(--light);
     border-radius: 1rem;
+    box-shadow: 0 0 var(--glow-border) var(--dark);
+    overflow: hidden;
 
     div {
         text-align: center;
@@ -141,12 +147,34 @@ img {
 #podcast-transcript {
     margin-bottom: 1rem;
     align-self: end;
-    translate: 0rem -4rem;
+    translate: 0rem -2rem;
 }
 
-#next-transcript {
+#next-transcript, #prev-transcript {
     font-size: 1.5em;
-    opacity: .4
+    opacity: .2
+}
+
+
+/* transcript speech progress bar */
+.text-progress-container {
+    background-color: var(--light);
+    height: 30px;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 99px;
+
+    #text-progress {
+        height: 100%;
+        background-color: var(--dark);
+        border-radius: 99px;
+        width: 0%;
+    }
+}
+
+.transcript-border {
+    border: solid 5px var(--highlight-3);
+    /* box-shadow: 0px 0px 0px 10px var(--dark); */
 }
 
 /* Speakers */
@@ -195,7 +223,7 @@ ul {
 
 /* active speaker  */
 li.active:not(li:nth-of-type(2n)) {
-    border: solid 5px var(--highlight-3);
+    border: solid 5px var(--highlight-1);
     opacity: 1;
 }
 
@@ -206,14 +234,19 @@ li.active:not(li:nth-of-type(2n)) {
     font-style: italic;
 }
 
-.shut-up {
+/* .shut-up {
     color: white;
     font-size: 5em;
-}
+} */
 
 .best {
-    font-size: 1.2em;
-    color: var(--highlight-1)
+    font-family: 'bold';
+}
+
+.old {
+    display: inline-block;
+    transform: scaleX(1.1);
+    translate: -.5rem 0rem;
 }
 
 .flexible {
@@ -229,6 +262,11 @@ li.active:not(li:nth-of-type(2n)) {
     animation: rotate 1s linear infinite;
 }
 
+.color-change {
+    animation: glow-size 2s infinite linear alternate;
+    box-shadow: 0 0 var(--glow-border) var(--dark);
+}
+
 @keyframes dancing-text {
     0% {
         translate: 0rem 0rem;
@@ -242,4 +280,19 @@ li.active:not(li:nth-of-type(2n)) {
     to {
         transform: rotate(360deg);
     }
+}
+
+@keyframes glow-size {
+    from {
+        --glow-border: 10px;
+    }
+    to {
+        --glow-border: 30px;
+    }
+}
+
+@property --glow-border {
+    syntax: "<length>";
+    initial-value: 10px;
+    inherits: false;
 }

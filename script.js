@@ -3,7 +3,12 @@
 
 const audio = document.getElementById('podcast-audio');
 const transcript = document.getElementById('podcast-transcript');
-const nextTranscript = document.getElementById('next-transcript')
+const nextTranscript = document.getElementById('next-transcript');
+const prevTranscript = document.getElementById('prev-transcript');
+
+const transcriptContainer = document.querySelector('.transcript-container');
+
+const textBar = document.getElementById('text-progress');
 
 const vynilPng = document.querySelector('.vynil-png');
 
@@ -19,6 +24,11 @@ audio.addEventListener('loadedmetadata', () => {
 
         if (track.activeCues.length > 0) {
             const currentCue = track.activeCues[0];
+            // Word gebruikt voor de "nextTranscription" functie.
+            // Maakt een Array van de allCues const en zoekt in de array naar de currentCue.
+            // Met hulp van Diego gemaakt, verdere uitleg nog door AI.
+            // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
+            // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
             const currentIndex = Array.from(allCues).indexOf(currentCue);
 
             let text = currentCue.text;
@@ -29,36 +39,78 @@ audio.addEventListener('loadedmetadata', () => {
 
             formattedText = formattedText
             .replace (/\bbest\b/i, `<span class="best">best</span>`)
+            .replace (/\oold\b/i, `<span class="old">ooold</span>`)
             .replace (/\bflexible\b/i, `<span class="flexible">flexible</span>`)
             .replace (/\bgiggle\b/i, `<span class="giggle">giggle</span>`)
             .replace (/\bShut up\b/i, `<span class="shut-up">Shut up</span>`)
 
             transcript.innerHTML = formattedText;
 
+            // Functie geschreven met hulp van AI. Checked bij de if statement of er een caption na de huidige is. 
+            // Als dat zo is plaats het de huidige caption + 1 (dus de volgende) als tekst in netTranscript
+            // Prompt, samen met mijn code gestuurd: I'm making a podcast site for someone that is deaf. In the transcriptions I want to showcase the upcoming transcript. 
             if (currentIndex < allCues.length - 1 ) {
                 nextTranscript.innerHTML = allCues[currentIndex + 1].text;
             } else {
                 nextTranscript.innerHTML = "";
             }
 
+            // previous transcript
+            if (currentIndex > 0 ) {
+                prevTranscript.innerHTML = allCues[currentIndex - 1].text;
+            } else {
+                prevTranscript.innerHTML = "";
+            }
+
+            const duration = currentCue.endTime - currentCue.startTime;
+
+            textBar.style.transition = 'none';
+            textBar.style.width = '0%';
+
+            textBar.offsetHeight;
+
+            textBar.style.transition = `width ${duration}s linear`;
+            textBar.style.width = '100%';
+
             // Met behulp van Diego bedacht en geschreven, hiermee stijl ik de transcriptie op het moment dat de aangegeven class in het vtt bestand zit.
             // Nadeel hiervan kan geen losse woorden stylen 
             if(text.includes('.music-playing')){
                 transcript.classList.add('intro-animation');
+                transcriptContainer.classList.add('color-change');
             }
             else {
                 transcript.classList.remove('intro-animation');
+                transcriptContainer.classList.remove('color-change');
             }
-            // if(text.includes('.scream')) {
-            //     transcript.style.setProperty('font-size', '10em')
-            // }
-            // else {
-            //     transcript.style.setProperty('font-size', '2em')
-            // }
 
             switchSpeaker(text);
         }
     });
+
+    audio.addEventListener('play', () => {
+        vynilPng.classList.add('rotate');
+        // progress bar text timer
+
+        if (track.activeCues.length > 0) {
+            const currentCue = track.activeCues[0];
+            const remaingDuration = currentCue.endTime - audio.currentTime; 
+
+            textBar.style.transition = 'none';
+            textBar.style.width = '0%';
+
+            textBar.offsetHeight;
+
+            textBar.style.transition = `width ${remaingDuration}s linear`;
+            textBar.style.width = '100%';
+        }
+    })
+
+    audio.addEventListener('pause', () => {
+        vynilPng.classList.remove('rotate');
+        const currentTextBarWidth = getComputedStyle(textBar).width;
+        textBar.style.transition = 'none';
+        textBar.style.width = currentTextBarWidth;
+    })
 });
 
 // Style profiles based on who is talking
@@ -86,11 +138,3 @@ function switchSpeaker(text) {
     }
 }
 
-// rotate vyil img when playing
-audio.addEventListener('play', () => {
-    vynilPng.classList.add('rotate');
-})
-
-audio.addEventListener('pause', () => {
-    vynilPng.classList.remove('rotate');
-})
