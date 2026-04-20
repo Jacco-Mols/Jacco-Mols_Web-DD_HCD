@@ -48,7 +48,9 @@ Vanwege een belangrijke persoonlijke afspraak heb ik niet de mogelijkheid gekreg
 
 We hadden ook deze week minder tijd gehad om te werken aan dit vak vanwege tweede paasdag, waardoor ik niet zo ver ben gekomen als ik had gehoopt. Toch vond ik wel dat ik een mooie tweede versie had gemaakt en getest bij Darice, ik had daarnaast ook goede vragen gesteld die mij volgende week weer verder op weg helpen. volgenden week hoop veel van deze punten in mijn website te hebben om meer te kunnen testen volgende dinsdag. Ik hoop de transcriptie nog wat leuker en uitgebreider te kunnen stylen dan ik dat nu heb staan, nu is het namelijk erg minimaal. 
 
-#### Gesprek van 10 April ingehaald op .....
+#### Gesprek van 10 April ingehaald op 20 April
+Vanwege een chaotische week met Smashing conference had ik niet de mogelijkheid gekregen om dit op een eerder moment gehad. 
+Over het algemeen ben ik heel goed op weg, ik heb tot nu toe een goede versie die er mooi uit ziet. Ik vind het ook interessant om erover na te denken hoe een doof persoon precies naar iets zou kunnen luisteren. Wat ik nog wel beter kan doen bij de volgende en laatste test is het maken meer nonesense. Door meer toe te voegen kan ik er beter achter komen wat Darice precies wilt of niet. 
 
 ## Week 3
 
