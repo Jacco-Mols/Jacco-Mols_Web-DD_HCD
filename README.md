@@ -81,4 +81,7 @@ Waar ik dus aan heb gewerkt is een soort progress bar waardoor je kan zien hoe l
 ## Week 4
 
 ### Maandag 20 April
-Ik heb vandaag geconcentreerd op het maken van nieuwe toevoegingen in mijn website die handige informatie uit mijn test kunnen brengen. Ik heb bijvoorbeeld opties gemaakt waarmee je delen van de site kan verstoppen of weer kan tonen. Ook kan je nu de tekstgrootte aanpassen doormiddel van een slider, hierdoor kan het persoon de website waar personaliseren.
+Ik heb vandaag geconcentreerd op het maken van nieuwe toevoegingen in mijn website die handige informatie uit mijn test kunnen brengen. Ik heb bijvoorbeeld opties gemaakt waarmee je delen van de site kan verstoppen of weer kan tonen. Ook kan je nu de tekstgrootte aanpassen doormiddel van een slider, hierdoor kan het persoon de website waar personaliseren. Verder heb ik een paneel in de onderkant gemaakt waar al deze settings in staan. Daarnaast heb ik een easter egg gemaakt dat het scherm roteert op het moment dat je alle settigns aan het staan.
+
+<img width="1512" height="772" alt="Fourth versiooooooononnnnn" src="https://github.com/user-attachments/assets/6de7c633-ff16-444b-9061-a1b7a468136a" />
+
