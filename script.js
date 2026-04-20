@@ -44,7 +44,19 @@ audio.addEventListener('loadedmetadata', () => {
             .replace (/\bgiggle\b/i, `<span class="giggle">giggle</span>`)
             .replace (/\bShut up\b/i, `<span class="shut-up">Shut up</span>`)
 
-            transcript.innerHTML = formattedText;
+            // transcript.innerHTML = formattedText;
+
+
+            transcript.classList.add('fade-out');
+
+            // http://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout
+            setTimeout(() => {
+                transcript.innerHTML = formattedText;
+                transcript.classList.remove('fade-out');
+
+            }, 150);
+
+
 
             // Functie geschreven met hulp van AI. Checked bij de if statement of er een caption na de huidige is. 
             // Als dat zo is plaats het de huidige caption + 1 (dus de volgende) als tekst in netTranscript
@@ -62,6 +74,7 @@ audio.addEventListener('loadedmetadata', () => {
                 prevTranscript.innerHTML = "";
             }
 
+            // timer progress bar
             const duration = currentCue.endTime - currentCue.startTime;
 
             textBar.style.transition = 'none';
@@ -89,16 +102,11 @@ audio.addEventListener('loadedmetadata', () => {
 
     audio.addEventListener('play', () => {
         vynilPng.classList.add('rotate');
+        
         // progress bar text timer
-
         if (track.activeCues.length > 0) {
             const currentCue = track.activeCues[0];
             const remaingDuration = currentCue.endTime - audio.currentTime; 
-
-            textBar.style.transition = 'none';
-            textBar.style.width = '0%';
-
-            textBar.offsetHeight;
 
             textBar.style.transition = `width ${remaingDuration}s linear`;
             textBar.style.width = '100%';
@@ -111,6 +119,49 @@ audio.addEventListener('loadedmetadata', () => {
         textBar.style.transition = 'none';
         textBar.style.width = currentTextBarWidth;
     })
+
+
+    // changing text size
+    const slider = document.querySelector('.font-size-slider');
+
+    slider.addEventListener('input', () => {
+        const fontSize = slider.value;
+        transcript.style.fontSize = `${fontSize}px`;
+    });
+
+
+    const speakersContainer = document.querySelector('.speaker-section');
+    const removeSpeaker = document.getElementById('settings-speakers');
+
+    removeSpeaker.addEventListener('change', function() {
+        if(this.checked) {
+            speakersContainer.style.display = "none";
+        } else {
+            speakersContainer.style.display = "flex";
+        }
+
+    });
+
+    const detailsContainer = document.querySelector('.about-podcast');
+    const removeDetails = document.getElementById('settings-details');
+
+    removeDetails.addEventListener('change', function () {
+        if(removeDetails.checked) {
+            detailsContainer.style.display = "none";
+        } else {
+            detailsContainer.style.display = "flex";
+        }
+    });
+
+    document.body.addEventListener('change', function () {
+        // easter egg
+        if(slider.value == 30 && removeDetails.checked && removeSpeaker.checked) {
+            document.body.classList.add('spin-easter-egg');
+        } else {
+            document.body.classList.remove('spin-easter-egg');
+        }
+    })
+
 });
 
 // Style profiles based on who is talking
@@ -137,4 +188,3 @@ function switchSpeaker(text) {
        person3.classList.add('active');
     }
 }
-
