@@ -77,3 +77,8 @@ Geteste versie:
 <img width="1509" height="773" alt="Third version" src="https://github.com/user-attachments/assets/2d22abca-8a2b-4300-8c5a-54048112b1ba" />
 
 Waar ik dus aan heb gewerkt is een soort progress bar waardoor je kan zien hoe lang je hebt voordat het verder gaat. Dit was technisch wel lastig, maar ik ben er wel uitgekomen waar ik heel blij mee ben. Ik hoop nog ervoor te kunnen zorgen dat je het kan pauzeren wanneer je de audio stopt. Verder wil nog ervoor zorgen dat de transcriptie zelf beter leesbaar is door bijvoorbeeld de mogelijkheid te bieden om door de teksten heen te scrollen.
+
+## Week 4
+
+### Maandag 20 April
+Ik heb vandaag geconcentreerd op het maken van nieuwe toevoegingen in mijn website die handige informatie uit mijn test kunnen brengen. Ik heb bijvoorbeeld opties gemaakt waarmee je delen van de site kan verstoppen of weer kan tonen. Ook kan je nu de tekstgrootte aanpassen doormiddel van een slider, hierdoor kan het persoon de website waar personaliseren.
