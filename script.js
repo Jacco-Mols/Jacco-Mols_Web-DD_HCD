@@ -153,14 +153,14 @@ audio.addEventListener('loadedmetadata', () => {
         }
     });
 
-    document.body.addEventListener('change', function () {
-        // easter egg
-        if(slider.value == 30 && removeDetails.checked && removeSpeaker.checked) {
-            document.body.classList.add('spin-easter-egg');
-        } else {
-            document.body.classList.remove('spin-easter-egg');
-        }
-    })
+    // document.body.addEventListener('change', function () {
+    //     // easter egg
+    //     if(slider.value == 30 && removeDetails.checked && removeSpeaker.checked) {
+    //         document.body.classList.add('spin-easter-egg');
+    //     } else {
+    //         document.body.classList.remove('spin-easter-egg');
+    //     }
+    // })
 
 });
 
