@@ -81,9 +81,21 @@ Waar ik dus aan heb gewerkt is een soort progress bar waardoor je kan zien hoe l
 ## Week 4
 
 ### Maandag 20 April
-Ik heb vandaag geconcentreerd op het maken van nieuwe toevoegingen in mijn website die handige informatie uit mijn test kunnen brengen. Ik heb bijvoorbeeld opties gemaakt waarmee je delen van de site kan verstoppen of weer kan tonen. Ook kan je nu de tekstgrootte aanpassen doormiddel van een slider, hierdoor kan het persoon de website waar personaliseren. Verder heb ik een paneel in de onderkant gemaakt waar al deze settings in staan. Daarnaast heb ik een easter egg gemaakt dat het scherm roteert op het moment dat je alle settigns aan het staan.
+Ik heb vandaag geconcentreerd op het maken van nieuwe toevoegingen in mijn website die handige informatie uit mijn test kunnen brengen. Ik heb bijvoorbeeld opties gemaakt waarmee je delen van de site kan verstoppen of weer kan tonen. Ook kan je nu de tekstgrootte aanpassen doormiddel van een slider, hierdoor kan het persoon de website waar personaliseren. Verder heb ik een paneel in de onderkant gemaakt waar al deze settings in staan. 
 
 Versie voor test 4
 <img width="1512" height="772" alt="Fourth versiooooooononnnnn" src="https://github.com/user-attachments/assets/6de7c633-ff16-444b-9061-a1b7a468136a" />
 
 Verder hoop ik nog de tijd te hebben om ervoor te zorgen dat ik de zinnen van de transcriptie kan verdelen in kleinere stukken. Dit zou het een fijnere ervaring maken voor darice om te lezen.
+
+### Dinsdag 21 April
+We hebben vandaag de laatste test gehad met Darice. Ik vond de test wel goed gaan, ik heb wel veel kunnen vragen aan Darice, maar over het algemeen vond Darice de opties in mijn website heel fijn. De tekst grootte vond ze bijvoorbeeld heel fijn en leesbaar en de optie om delen van de site te verstoppen was ze ook heel blij mee. 
+
+Ik had de mogelijkheid gekregen om deze vragen te stellen:
+- Vind je dit genoeg context van de podcast?
+- Zou je zelf meer styling terug willen zien in de captions?
+- Zijn deze settings naar wens? Of zou je nog meer willen aanpassen… zoals?
+- Vind je de tekstgrootte fijn om te lezen?
+
+### Afronding week 4
+
