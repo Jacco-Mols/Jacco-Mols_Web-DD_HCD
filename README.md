@@ -98,4 +98,4 @@ Ik had de mogelijkheid gekregen om deze vragen te stellen:
 - Vind je de tekstgrootte fijn om te lezen?
 
 ### Afronding week 4
-
+Ik denk dat ik deze week enorme stappen heb gezet tot een mooi eindproduct. Ik heb ook aan de technische kant veel nieuwe dingen gebruikt zoals een if statement met "&&" om wat uit te probreren. Ik heb ook besproken met Leonie wat mijn beste volgende en laatste stappen zijn tijdens het gesprek. Wat ik het beste kan doen is om terug te gaan naar mijn vorige testen en kijken welke functies ik nog kan toevoegen voor een betere ervaring voor Darice. Ik zit ook al met hele technisch lastige aanpassingen, maar ik zelf nog niet zeker of dit functies zijn die Darice echt verder helpen met het lezen.
