@@ -123,6 +123,7 @@ audio.addEventListener('loadedmetadata', () => {
         transcript.style.fontSize = `${fontSize}px`;
     });
 
+    // removing sections of website
     const speakersContainer = document.querySelector('.speaker-section');
     const removeSpeaker = document.getElementById('settings-speakers');
 
@@ -142,6 +143,26 @@ audio.addEventListener('loadedmetadata', () => {
             detailsContainer.style.display = "none";
         } else {
             detailsContainer.style.display = "flex";
+        }
+    });
+
+    const barContainer = document.querySelector('.text-progress-container');
+    const removeBar = document.getElementById('settings-bar');
+
+    removeBar.addEventListener('change', function () {
+        if(removeBar.checked) {
+            barContainer.classList.add('hidden');
+        } else {
+            barContainer.classList.remove('hidden');
+        }
+    });
+
+    const bigTranscriptContainer = document.querySelector('.podcast')
+    document.body.addEventListener('change', function () {
+        if(removeDetails.checked && removeSpeaker.checked) {
+            bigTranscriptContainer.classList.add('transcript-container-max-width')
+        } else {
+            bigTranscriptContainer.classList.remove('transcript-container-max-width')
         }
     });
 

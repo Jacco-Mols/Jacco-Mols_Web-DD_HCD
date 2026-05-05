@@ -314,6 +314,13 @@ footer:has(.show-settings:checked) {
     translate: 0rem 0rem;
 }
 
+.transcript-container-max-width {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-self: center;
+}
+
 /* expressed words in transcript */
 .giggle {
     color: var(--highlight-1);
@@ -347,6 +354,11 @@ footer:has(.show-settings:checked) {
 .color-change {
     animation: glow-size 2s infinite linear alternate;
     box-shadow: 0 0 var(--glow-border) var(--dark);
+}
+
+/* hidden */
+.hidden {
+    display: none;
 }
 
 @keyframes dancing-text {
