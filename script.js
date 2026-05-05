@@ -39,13 +39,10 @@ audio.addEventListener('loadedmetadata', () => {
 
             formattedText = formattedText
             .replace (/\bbest\b/i, `<span class="best">best</span>`)
-            .replace (/\oold\b/i, `<span class="old">ooold</span>`)
+            .replace (/\bold\b/i, `<span class="old">old</span>`)
             .replace (/\bflexible\b/i, `<span class="flexible">flexible</span>`)
             .replace (/\bgiggle\b/i, `<span class="giggle">giggle</span>`)
             .replace (/\bShut up\b/i, `<span class="shut-up">Shut up</span>`)
-
-            // transcript.innerHTML = formattedText;
-
 
             transcript.classList.add('fade-out');
 
@@ -55,8 +52,6 @@ audio.addEventListener('loadedmetadata', () => {
                 transcript.classList.remove('fade-out');
 
             }, 150);
-
-
 
             // Functie geschreven met hulp van AI. Checked bij de if statement of er een caption na de huidige is. 
             // Als dat zo is plaats het de huidige caption + 1 (dus de volgende) als tekst in netTranscript
@@ -111,15 +106,14 @@ audio.addEventListener('loadedmetadata', () => {
             textBar.style.transition = `width ${remaingDuration}s linear`;
             textBar.style.width = '100%';
         }
-    })
+    });
 
     audio.addEventListener('pause', () => {
         vynilPng.classList.remove('rotate');
         const currentTextBarWidth = getComputedStyle(textBar).width;
         textBar.style.transition = 'none';
         textBar.style.width = currentTextBarWidth;
-    })
-
+    });
 
     // changing text size
     const slider = document.querySelector('.font-size-slider');
@@ -128,7 +122,6 @@ audio.addEventListener('loadedmetadata', () => {
         const fontSize = slider.value;
         transcript.style.fontSize = `${fontSize}px`;
     });
-
 
     const speakersContainer = document.querySelector('.speaker-section');
     const removeSpeaker = document.getElementById('settings-speakers');
@@ -139,7 +132,6 @@ audio.addEventListener('loadedmetadata', () => {
         } else {
             speakersContainer.style.display = "flex";
         }
-
     });
 
     const detailsContainer = document.querySelector('.about-podcast');
@@ -153,15 +145,14 @@ audio.addEventListener('loadedmetadata', () => {
         }
     });
 
-    // document.body.addEventListener('change', function () {
-    //     // easter egg
-    //     if(slider.value == 30 && removeDetails.checked && removeSpeaker.checked) {
-    //         document.body.classList.add('spin-easter-egg');
-    //     } else {
-    //         document.body.classList.remove('spin-easter-egg');
-    //     }
-    // })
-
+    document.body.addEventListener('change', function () {
+        // easter egg
+        if(slider.value == 30 && removeDetails.checked && removeSpeaker.checked) {
+            document.body.classList.add('spin-easter-egg');
+        } else {
+            document.body.classList.remove('spin-easter-egg');
+        }
+    });
 });
 
 // Style profiles based on who is talking
@@ -178,13 +169,13 @@ function switchSpeaker(text) {
 
     if (text.includes('Jason:')) {
         person1.classList.add('active');
-    }
+    };
 
     if (text.includes('Sean:')) {
        person2.classList.add('active');
-    }
+    };
 
     if (text.includes('Will:')) {
        person3.classList.add('active');
-    }
+    };
 }
