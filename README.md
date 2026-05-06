@@ -99,3 +99,36 @@ Ik had de mogelijkheid gekregen om deze vragen te stellen:
 
 ### Afronding week 4
 Ik denk dat ik deze week enorme stappen heb gezet tot een mooi eindproduct. Ik heb ook aan de technische kant veel nieuwe dingen gebruikt zoals een if statement met "&&" om wat uit te probreren. Ik heb ook besproken met Leonie wat mijn beste volgende en laatste stappen zijn tijdens het gesprek. Wat ik het beste kan doen is om terug te gaan naar mijn vorige testen en kijken welke functies ik nog kan toevoegen voor een betere ervaring voor Darice. Ik zit ook al met hele technisch lastige aanpassingen, maar ik zelf nog niet zeker of dit functies zijn die Darice echt verder helpen met het lezen.
+
+### Laatste loodjes
+Ik heb vandaag nog de laatste paar aanpassingen toegevoegd voor deze website. Omdat Darice graag een simpelere website wil heb ik er voor gekozen om niet veel extra's toe te voegen aan de website. Op dit moment is de website nog simpel, maar zodra ik iets toevoeg kan dit snel te druk worden.
+
+Wat ik nog wel heb toegevoegd is een optie om de progress bar te verstoppen, dit zorgd voor nog meer personalisatie. 
+
+## Reflectie
+In het begin vond ik dit project heel vaag, ik had geen goed beeld van het persoon en wist niet zeker waar ze naar zocht. Dit uiteraard duidelijk na de eerste test waar ik de mogelijkheid kreeg om veel vragen te stellen aan het test persoon Darice. 
+
+Wat mij opviel aan Darice was dat ze op latere leeftijd doof is geworden waardoor ze nog wel kon praten, dit maakte de communicatie wel makkelijk en fijn. Verder werkt ze als een developer wat heel fijn is omdat er hierdoor een stuk herkenning was in de applicaties die wij maakten. Ik vond wel dat je na de eerste test veel antwoorden uit haar moest krijgen door verder te vragen en veel vragen van te voren bedenken, wat er voor zorgde dat ik voorbereid aan kwam bij de testen. 
+
+wat ik nog wel jammer vond is dat ik bij de laatste test weinig negatieve feedback had gekregen, hierdoor was mijn conclusie vrij vaag en onduidelijk, ik had misschien meer nieuwe dingen moeten toevoegen.
+
+Over het algemeen vond ik dit wel een interessant traject waar ik veel heb geleerd. Ik vond het ook heel interessant om voor iemand te ontwerpen die het internet op een andere manier gebruikt. Persoonlijk vond ik alleen de code die ik voor dit project had gebruikt niet heel interessant, ik heb me heel goed moeten houden aan een logische structuur van de code waardoor ik wel veel creativiteit miste in het project. Ik ben daarnaast wel heel blij met wat ik heb geleverd aan darice, ik veel mooie dingen kunnen maken voor Darice en heb ik ook kunnen leren.
+
+### Bronnen
+transcriptie:
+https://spotscribe.io/podcasts/episode/51613591711
+https://james.cridland.net/blog/2025/html-audio-player-with-captions/
+
+Code uitleg:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/track
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
+http://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout
+https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
+
+AI Prompts:
+Om een specifiek woord te stijlen in de transcriptie:
+is it possible to edit one specific word of a que in the vtt document? So I want to adit the word giggle in the vtt, how do I edit the with either js or css
+
+Om de volgende cue te zien in de transcriptie:
+I'm making a podcast site for someone that is deaf. In the transcriptions I want to showcase the upcoming transcript. 
