@@ -6,8 +6,6 @@
     --highlight-2: #F61833;
     --highlight-3: #F67A2C;
     --highlight-4: #FDC513;
-
-
 }
 
 @font-face {
@@ -341,8 +339,6 @@ footer {
             margin-right: .3rem;
         }
     }
-
-
 }
 
 footer:has(.show-settings:checked) {
@@ -419,6 +415,7 @@ footer:has(.show-settings:checked) {
         --glow-border: 30px;
     }
 }
+
 .spin-easter-egg {
     animation: rotate-screen 10s linear infinite;
 }

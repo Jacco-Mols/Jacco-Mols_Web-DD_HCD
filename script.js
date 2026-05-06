@@ -110,11 +110,11 @@ audio.addEventListener('loadedmetadata', () => {
 
     audio.addEventListener('pause', () => {
         vynilPng.classList.remove('rotate');
+        // https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
         const currentTextBarWidth = getComputedStyle(textBar).width;
         textBar.style.transition = 'none';
         textBar.style.width = currentTextBarWidth;
     });
-
     // changing text size
     const slider = document.querySelector('.font-size-slider');
 
@@ -166,14 +166,6 @@ audio.addEventListener('loadedmetadata', () => {
         }
     });
 
-    document.body.addEventListener('change', function () {
-        // easter egg
-        if(slider.value == 30 && removeDetails.checked && removeSpeaker.checked) {
-            document.body.classList.add('spin-easter-egg');
-        } else {
-            document.body.classList.remove('spin-easter-egg');
-        }
-    });
 });
 
 // Style profiles based on who is talking
