@@ -101,7 +101,9 @@ Ik had de mogelijkheid gekregen om deze vragen te stellen:
 Ik denk dat ik deze week enorme stappen heb gezet tot een mooi eindproduct. Ik heb ook aan de technische kant veel nieuwe dingen gebruikt zoals een if statement met "&&" om wat uit te probreren. Ik heb ook besproken met Leonie wat mijn beste volgende en laatste stappen zijn tijdens het gesprek. Wat ik het beste kan doen is om terug te gaan naar mijn vorige testen en kijken welke functies ik nog kan toevoegen voor een betere ervaring voor Darice. Ik zit ook al met hele technisch lastige aanpassingen, maar ik zelf nog niet zeker of dit functies zijn die Darice echt verder helpen met het lezen.
 
 ### Laatste loodjes
-Ik heb vandaag nog de laatste paar aanpassingen toegevoegd voor deze website. Ik heb uiteindelijk voor gekozen om niet 
+Ik heb vandaag nog de laatste paar aanpassingen toegevoegd voor deze website. Omdat Darice graag een simpelere website wil heb ik er voor gekozen om niet veel extra's toe te voegen aan de website. Op dit moment is de website nog simpel, maar zodra ik iets toevoeg kan dit snel te druk worden.
+
+Wat ik nog wel heb toegevoegd is een optie om de progress bar te verstoppen, dit zorgd voor nog meer personalisatie. 
 
 ## Reflectie
 In het begin vond ik dit project heel vaag, ik had geen goed beeld van het persoon en wist niet zeker waar ze naar zocht. Dit uiteraard duidelijk na de eerste test waar ik de mogelijkheid kreeg om veel vragen te stellen aan het test persoon Darice. 
